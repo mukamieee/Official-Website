@@ -50,6 +50,7 @@
 
 </head>
 <body>
+<?php require_once ("includes/connection.php");?>
     <h1>Sign In to Sha's Adornments</h1>
     <form action="signin_process.php" method="post">
         <!-- Sign-In Section -->
