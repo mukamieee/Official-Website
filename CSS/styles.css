@@ -1,0 +1,9 @@
+.body {
+    background-image: url("/photos/Bohemian\ Stylish\ Moon\ And\ The\ Stars\ Rings.jpeg");
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fix the background image in place */
+    background-position: center center; /* Center the image */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
