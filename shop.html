@@ -6,6 +6,47 @@
     <title>Shop</title>
     <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/table.css">
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const form = document.querySelector('form');
+          
+          // Form validation on submit
+          form.addEventListener('submit', function(event) {
+              const name = document.getElementById('name').value;
+              const email = document.getElementById('email').value;
+              
+              if (name === '' || email === '') {
+                  alert('Name and Email are required!');
+                  event.preventDefault(); // Prevent form submission
+              }
+          });
+
+          // Additional dynamic behavior example
+          const customDesignCheckbox = document.getElementById('customDesign');
+          const serviceTypeRadios = document.getElementsByName('serviceType');
+          const additionalDetails = document.getElementById('details');
+
+          customDesignCheckbox.addEventListener('change', function() {
+              if (customDesignCheckbox.checked) {
+                  additionalDetails.style.display = 'block';
+              } else {
+                  additionalDetails.style.display = 'none';
+              }
+          });
+
+          serviceTypeRadios.forEach(radio => {
+              radio.addEventListener('change', function() {
+                  if (this.value === 'customOrder') {
+                      additionalDetails.placeholder = 'Please describe your custom order in detail.';
+                  } else {
+                      additionalDetails.placeholder = '';
+                  }
+              });
+          });
+      });
+  </script>
+
 </head>
 <body>
   <nav class="navbar">
