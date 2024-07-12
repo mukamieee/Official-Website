@@ -36,6 +36,7 @@
             </div>
         </div>
     </div>
+    <!-- this script allows elements with the class "collapsible" to toggle the visibility of their next sibling elements when clicked. -->
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
