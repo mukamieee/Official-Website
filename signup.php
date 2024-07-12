@@ -44,6 +44,7 @@
 
 </head>
 <body>
+<?php require_once ("includes/connection.php");?>
     <h1>Sign Up for Sha's Adornments</h1>
     <form action="signup_process.php" method="post">
         <!-- User Information Section -->
